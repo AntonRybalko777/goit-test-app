@@ -10,7 +10,7 @@ import {
   Model,
   Price,
 } from './CarCard.styled';
-import { FaHeart, FaRegHeart } from 'react-icons/fa';
+import { FaRegHeart } from 'react-icons/fa';
 import Modal from 'react-modal';
 import NoImage from '../../images/no-image.jpg';
 import { useState } from 'react';
