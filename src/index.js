@@ -21,7 +21,7 @@ const theme = {
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename="/goit-test-app">
         <ThemeProvider theme={theme}>
           <App />
         </ThemeProvider>
