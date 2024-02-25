@@ -14,6 +14,7 @@ export const App = () => {
   useEffect(() => {
     dispatch(fetchData());
   }, [dispatch]);
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>

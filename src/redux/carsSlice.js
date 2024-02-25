@@ -16,7 +16,7 @@ const DataSlice = createSlice({
       .addCase(fetchData.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        state.info = action.payload;
+        state.info = [...state.info, ...action.payload];
       });
   },
 });
