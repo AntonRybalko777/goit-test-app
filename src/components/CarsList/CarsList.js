@@ -1,7 +1,7 @@
 import { CarCard } from 'components/CarCard/CarCard';
 import { useSelector } from 'react-redux';
 import { selectCars } from '../../redux/selectors';
-import { List } from './CarsList.styled';
+import { List, Button } from './CarsList.styled';
 import { useEffect, useState } from 'react';
 import { fetchData } from '../../redux/operations';
 import { useDispatch } from 'react-redux';
@@ -22,14 +22,19 @@ export const CarsList = () => {
   };
   return (
     <>
-      <List>
-        {cars.map(car => (
-          <li key={car.id}>
-            <CarCard car={car} />
-          </li>
-        ))}
-      </List>
-      <button onClick={loadMore}>Load more</button>
+      {cars.length > 0 && (
+        <List>
+          {cars.map(car => (
+            <li key={car.id}>
+              <CarCard car={car} />
+            </li>
+          ))}
+        </List>
+      )}
+
+      {cars.length > 0 && page === 1 && (
+        <Button onClick={loadMore}>Load more</Button>
+      )}
     </>
   );
 };
