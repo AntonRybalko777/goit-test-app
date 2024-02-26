@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/goit-test-app/static/css/main.cd2e038f.css",
-    "main.js": "/goit-test-app/static/js/main.5a15f301.js",
+    "main.js": "/goit-test-app/static/js/main.4cf79cd7.js",
     "static/js/546.3a223b35.chunk.js": "/goit-test-app/static/js/546.3a223b35.chunk.js",
-    "static/js/766.b2851f50.chunk.js": "/goit-test-app/static/js/766.b2851f50.chunk.js",
-    "static/js/826.7d602e3b.chunk.js": "/goit-test-app/static/js/826.7d602e3b.chunk.js",
-    "static/js/24.aaa97354.chunk.js": "/goit-test-app/static/js/24.aaa97354.chunk.js",
+    "static/js/653.006e3426.chunk.js": "/goit-test-app/static/js/653.006e3426.chunk.js",
+    "static/js/594.9a8d6fa6.chunk.js": "/goit-test-app/static/js/594.9a8d6fa6.chunk.js",
+    "static/js/24.410d10a8.chunk.js": "/goit-test-app/static/js/24.410d10a8.chunk.js",
     "static/media/cars_home.png": "/goit-test-app/static/media/cars_home.03c4f63fdb782871f826.png",
     "index.html": "/goit-test-app/index.html",
     "main.cd2e038f.css.map": "/goit-test-app/static/css/main.cd2e038f.css.map",
-    "main.5a15f301.js.map": "/goit-test-app/static/js/main.5a15f301.js.map",
+    "main.4cf79cd7.js.map": "/goit-test-app/static/js/main.4cf79cd7.js.map",
     "546.3a223b35.chunk.js.map": "/goit-test-app/static/js/546.3a223b35.chunk.js.map",
-    "766.b2851f50.chunk.js.map": "/goit-test-app/static/js/766.b2851f50.chunk.js.map",
-    "826.7d602e3b.chunk.js.map": "/goit-test-app/static/js/826.7d602e3b.chunk.js.map",
-    "24.aaa97354.chunk.js.map": "/goit-test-app/static/js/24.aaa97354.chunk.js.map"
+    "653.006e3426.chunk.js.map": "/goit-test-app/static/js/653.006e3426.chunk.js.map",
+    "594.9a8d6fa6.chunk.js.map": "/goit-test-app/static/js/594.9a8d6fa6.chunk.js.map",
+    "24.410d10a8.chunk.js.map": "/goit-test-app/static/js/24.410d10a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.5a15f301.js"
+    "static/js/main.4cf79cd7.js"
   ]
 }
