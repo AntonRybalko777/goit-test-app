@@ -34,7 +34,7 @@ export default function Catalog() {
       {isError && (
         <p>Whoops... Something went wrong. Please try to reload the page.</p>
       )}
-      {!isError && !isLoading && <CarsList />}
+      {!isError && <CarsList />}
     </div>
   );
 }

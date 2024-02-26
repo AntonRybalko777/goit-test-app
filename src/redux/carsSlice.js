@@ -3,7 +3,7 @@ import { fetchData } from './operations';
 
 const CarsSlice = createSlice({
   name: 'cars',
-  initialState: { info: [], isLoading: false, error: null },
+  initialState: { info: [], isLoading: false, error: null, endOfList: false },
   extraReducers: builder => {
     builder
       .addCase(fetchData.pending, state => {
@@ -17,6 +17,9 @@ const CarsSlice = createSlice({
         state.isLoading = false;
         state.error = null;
         state.info = [...state.info, ...action.payload];
+        if (action.payload.length < 12) {
+          state.endOfList = true;
+        }
       });
   },
 });
