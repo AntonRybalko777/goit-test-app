@@ -24,7 +24,7 @@ export const CarModal = ({ car, onClose }) => {
       <Button onClick={onClose}>
         <IoCloseSharp />
       </Button>
-      <Image src={car.img ?? NoImage} alt={car.make} />
+      <Image src={car.img ?? car.photoLink ?? NoImage} alt={car.make} />
       <Make>
         {car.make} <Model>{car.model}</Model>, {car.year}
       </Make>

@@ -23,17 +23,16 @@ export const CarsList = () => {
   return (
     <>
       {cars.length > 0 && (
-        <List>
-          {cars.map(car => (
-            <li key={car.id}>
-              <CarCard car={car} />
-            </li>
-          ))}
-        </List>
-      )}
-
-      {cars.length > 0 && page === 1 && (
-        <Button onClick={loadMore}>Load more</Button>
+        <>
+          <List>
+            {cars.map(car => (
+              <li key={car.id}>
+                <CarCard car={car} />
+              </li>
+            ))}
+          </List>
+          <Button onClick={loadMore}>Load more</Button>
+        </>
       )}
     </>
   );

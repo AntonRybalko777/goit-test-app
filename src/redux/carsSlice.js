@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchData } from './operations';
 
-const DataSlice = createSlice({
+const CarsSlice = createSlice({
   name: 'cars',
   initialState: { info: [], isLoading: false, error: null },
   extraReducers: builder => {
@@ -21,4 +21,4 @@ const DataSlice = createSlice({
   },
 });
 
-export const carsReducer = DataSlice.reducer;
+export const carsReducer = CarsSlice.reducer;

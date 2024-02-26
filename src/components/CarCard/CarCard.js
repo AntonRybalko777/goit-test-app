@@ -44,7 +44,7 @@ export const CarCard = ({ car }) => {
   return (
     <CardContainer>
       <ImgWrapper>
-        <CardImage src={car.img ?? NoImage} alt={car.make} />
+        <CardImage src={car.img ?? car.photoLink ?? NoImage} alt={car.make} />
         <FaRegHeart />
         {/* <FaHeart /> */}
       </ImgWrapper>

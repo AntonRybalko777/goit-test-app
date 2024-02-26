@@ -8,7 +8,7 @@ export const List = styled.ul`
 `;
 
 export const Button = styled.button`
-  margin: 100px auto;
+  margin: 100px auto 20px;
   display: flex;
   font-weight: 500;
   font-size: 16px;
