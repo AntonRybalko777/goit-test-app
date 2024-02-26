@@ -2,10 +2,17 @@
 
 Service for car rental in Ukraine. Project has 3 pages:
 
-- Home page (welcome page with common description of the service and company
+- [Home](#home) (welcome page with common description of the service and company
   info)
-- Catalog (list of available rental cars with a filter by brand)
-- Favorite (list of cars added to the favorites)
+- [Catalog](#catalog)
+- [Favorites](#favorites)
+
+  ### Home
+  Welcome page with common description of the service and company info
+  ### Catalog
+  List of available rental cars with filter by car brand and modal window with detailed info about the car. By clicking on the "heart" icon car being added to the favorites list.
+  ### Favorites
+  List of the cars added to the favorites that is stored in Local Storage.
 
 ## Technologies
 
