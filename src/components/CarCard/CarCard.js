@@ -43,12 +43,14 @@ export const CarCard = ({ car }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const dispatch = useDispatch();
 
+  const isFavoriteCar = () =>
+    favoriteCars.find(favoriteCar => favoriteCar.id === car.id);
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
 
   const onLike = () => {
-    favoriteCars.find(favoriteCar => favoriteCar.id === car.id)
+    isFavoriteCar()
       ? dispatch(removeFromFavorite(car.id))
       : dispatch(addToFavorite(car));
   };
@@ -58,10 +60,10 @@ export const CarCard = ({ car }) => {
       <ImgWrapper>
         <CardImage src={car.img ?? car.photoLink ?? NoImage} alt={car.make} />
         <LikeButton onClick={onLike}>
-          {favoriteCars.find(favoriteCar => favoriteCar.id === car.id) ? (
-            <FaHeart />
+          {isFavoriteCar() ? (
+            <FaHeart color="#3470ff" />
           ) : (
-            <FaRegHeart />
+            <FaRegHeart color="white" />
           )}
         </LikeButton>
       </ImgWrapper>

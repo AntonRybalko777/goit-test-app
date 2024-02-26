@@ -95,7 +95,6 @@ export const LikeButton = styled.button`
   margin: 0;
 
   svg {
-    fill: blue;
     opacity: 0.8;
     width: 18px;
     height: 18px;
