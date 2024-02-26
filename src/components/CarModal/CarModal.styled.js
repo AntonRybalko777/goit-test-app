@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  max-width: 461px;
+`;
+
 export const Image = styled.img`
   border-radius: 14px;
   width: 461px;

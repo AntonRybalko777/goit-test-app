@@ -23,6 +23,8 @@ import { addToFavorite, removeFromFavorite } from '../../redux/favoriteSlice';
 const customStyles = {
   overlay: {
     backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    overflowY: 'auto',
+    zIndex: '1000',
   },
   content: {
     top: '50%',
@@ -33,7 +35,9 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
     padding: '40px',
     borderRadius: '24px',
-    maxWidth: '541px',
+    maxWidth: '85vw',
+    marginTop: '20px',
+    zIndex: '1100',
   },
 };
 Modal.setAppElement('#root');

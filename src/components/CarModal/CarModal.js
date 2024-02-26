@@ -11,6 +11,7 @@ import {
   ConditionsList,
   ConditionsItem,
   ConditionsNumber,
+  Container,
   Link,
 } from './CarModal.styled';
 import { IoCloseSharp } from 'react-icons/io5';
@@ -20,7 +21,7 @@ export const CarModal = ({ car, onClose }) => {
   const minAge = rentalConditions[0].split(': ')[1];
 
   return (
-    <>
+    <Container>
       <Button onClick={onClose}>
         <IoCloseSharp />
       </Button>
@@ -69,6 +70,6 @@ export const CarModal = ({ car, onClose }) => {
         </ConditionsItem>
       </ConditionsList>
       <Link href="tel:+380730000000">Rental car</Link>
-    </>
+    </Container>
   );
 };
