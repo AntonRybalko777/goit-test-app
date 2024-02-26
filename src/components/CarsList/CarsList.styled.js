@@ -2,9 +2,12 @@ import styled from 'styled-components';
 
 export const List = styled.ul`
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 50px 29px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const Button = styled.button`

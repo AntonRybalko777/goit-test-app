@@ -58,7 +58,11 @@ export const CarCard = ({ car }) => {
   return (
     <CardContainer>
       <ImgWrapper>
-        <CardImage src={car.img ?? car.photoLink ?? NoImage} alt={car.make} />
+        <CardImage
+          src={car.img ?? car.photoLink ?? NoImage}
+          alt={car.make}
+          loading="lazy"
+        />
         <LikeButton onClick={onLike}>
           {isFavoriteCar() ? (
             <FaHeart color="#3470ff" />
