@@ -2,11 +2,6 @@
 
 Service for car rental in Ukraine. Project has 3 pages:
 
-- [Home](#home) (welcome page with common description of the service and company
-  info)
-- [Catalog](#catalog)
-- [Favorites](#favorites)
-
   ### Home
   Welcome page with common description of the service and company info
   ### Catalog
