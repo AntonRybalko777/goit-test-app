@@ -6,4 +6,11 @@ Service for car rental in Ukraine. Project has 3 pages:
 ## Technologies
 - [JavaScript](https://ecma-international.org/publications-and-standards/standards/ecma-262/)
 - [React](https://react.dev/)
-  
+- [Redux Toolkit](https://www.npmjs.com/package/@reduxjs/toolkit)
+- [React Router DOM](https://www.npmjs.com/package/react-router-dom)
+- [Axios](https://www.npmjs.com/package/axios)
+- [Styled Components](https://www.npmjs.com/package/styled-components)
+- [React Modal](https://www.npmjs.com/package/react-modal)
+- [React Icons](https://www.npmjs.com/package/react-icons)
+- [Redux Persist](https://www.npmjs.com/package/redux-persist)
+- [Material UI](https://mui.com/material-ui/getting-started/)
