@@ -1,5 +1,6 @@
 import { CarCard } from 'components/CarCard/CarCard';
 import { useSelector } from 'react-redux';
+import { Filter } from 'components/Filter/Filter';
 import { selectFilteredCars } from '../../redux/selectors';
 import { List, Button } from './CarsList.styled';
 import { useEffect, useState } from 'react';
@@ -22,6 +23,7 @@ export const CarsList = () => {
   };
   return (
     <>
+      <Filter />
       {filteredCars.length > 0 && (
         <>
           <List>

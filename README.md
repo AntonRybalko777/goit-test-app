@@ -2,12 +2,19 @@
 
 Service for car rental in Ukraine. Project has 3 pages:
 
-  ### Home
-  Welcome page with common description of the service and company info
-  ### Catalog
-  List of available rental cars with filter by car brand and modal window with detailed info about the car. By clicking on the "heart" icon car being added to the favorites list.
-  ### Favorites
-  List of the cars added to the favorites that is stored in Local Storage.
+### Home
+
+Welcome page with common description of the service and company info
+
+### Catalog
+
+List of available rental cars with filter by car brand and modal window with
+detailed info about the car. By clicking on the "heart" icon car being added to
+the favorites list.
+
+### Favorites
+
+List of the cars added to the favorites that is stored in Local Storage.
 
 ## Technologies
 
@@ -21,6 +28,7 @@ Service for car rental in Ukraine. Project has 3 pages:
 - [React Icons](https://www.npmjs.com/package/react-icons)
 - [Redux Persist](https://www.npmjs.com/package/redux-persist)
 - [Material UI](https://mui.com/material-ui/getting-started/)
+- [React Loader-Spinner](https://www.npmjs.com/package/react-loader-spinner/)
 
 ## Usage
 
