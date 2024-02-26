@@ -1,5 +1,6 @@
 import {
   Button,
+  LikeButton,
   CardContainer,
   CardImage,
   DetailsItem,
@@ -10,11 +11,14 @@ import {
   Model,
   Price,
 } from './CarCard.styled';
-import { FaRegHeart } from 'react-icons/fa';
+import { FaHeart, FaRegHeart } from 'react-icons/fa';
 import Modal from 'react-modal';
 import NoImage from '../../images/no-image.jpg';
 import { useState } from 'react';
 import { CarModal } from 'components/CarModal/CarModal';
+import { selectFavorite } from '../../redux/selectors';
+import { useSelector, useDispatch } from 'react-redux';
+import { addToFavorite, removeFromFavorite } from '../../redux/favoriteSlice';
 
 const customStyles = {
   overlay: {
@@ -35,18 +39,31 @@ const customStyles = {
 Modal.setAppElement('#root');
 
 export const CarCard = ({ car }) => {
+  const favoriteCars = useSelector(selectFavorite);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const dispatch = useDispatch();
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
+  };
+
+  const onLike = () => {
+    favoriteCars.find(favoriteCar => favoriteCar.id === car.id)
+      ? dispatch(removeFromFavorite(car.id))
+      : dispatch(addToFavorite(car));
   };
 
   return (
     <CardContainer>
       <ImgWrapper>
         <CardImage src={car.img ?? car.photoLink ?? NoImage} alt={car.make} />
-        <FaRegHeart />
-        {/* <FaHeart /> */}
+        <LikeButton onClick={onLike}>
+          {favoriteCars.find(favoriteCar => favoriteCar.id === car.id) ? (
+            <FaHeart />
+          ) : (
+            <FaRegHeart />
+          )}
+        </LikeButton>
       </ImgWrapper>
       <InfoContainer>
         <Info>

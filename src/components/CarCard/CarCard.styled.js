@@ -83,12 +83,19 @@ export const Button = styled.button`
 
 export const ImgWrapper = styled.div`
   position: relative;
+`;
+
+export const LikeButton = styled.button`
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 0;
+  margin: 0;
 
   svg {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    fill: white;
+    fill: blue;
     opacity: 0.8;
     width: 18px;
     height: 18px;
