@@ -1,4 +1,5 @@
 import { CarCard } from 'components/CarCard/CarCard';
+import { EmptyMessage, StyledLink } from './FavCarsList.styled';
 import { useSelector } from 'react-redux';
 import { selectFavorite } from '../../redux/selectors';
 import { List } from 'components/CarsList/CarsList.styled';
@@ -8,7 +9,7 @@ export const FavCarsList = () => {
 
   return (
     <>
-      {cars.length > 0 && (
+      {cars.length > 0 ? (
         <>
           <List>
             {cars.map(car => (
@@ -18,6 +19,11 @@ export const FavCarsList = () => {
             ))}
           </List>
         </>
+      ) : (
+        <EmptyMessage>
+          List of favorite cars is empty. You can choose your favorites from
+          <StyledLink to="/catalog"> Catalog</StyledLink>
+        </EmptyMessage>
       )}
     </>
   );
