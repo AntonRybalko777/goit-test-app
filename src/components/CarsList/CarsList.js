@@ -1,7 +1,11 @@
 import { CarCard } from 'components/CarCard/CarCard';
 import { useSelector } from 'react-redux';
 import { Filter } from 'components/Filter/Filter';
-import { selectFilteredCars, selectEndofList } from '../../redux/selectors';
+import {
+  selectFilteredCars,
+  selectEndofList,
+  selectFilter,
+} from '../../redux/selectors';
 import { List, Button } from './CarsList.styled';
 import { useEffect, useState } from 'react';
 import { fetchData } from '../../redux/operations';
@@ -10,8 +14,9 @@ import { useDispatch } from 'react-redux';
 export const CarsList = () => {
   const [page, setPage] = useState(1);
   const filteredCars = useSelector(selectFilteredCars);
+  const filter = useSelector(selectFilter);
   const endOfList = useSelector(selectEndofList);
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(selectFilter);
 
   useEffect(() => {
     if (page > 1) {
@@ -34,7 +39,9 @@ export const CarsList = () => {
               </li>
             ))}
           </List>
-          {!endOfList && <Button onClick={loadMore}>Load more</Button>}
+          {!endOfList && filter === 'All' && (
+            <Button onClick={loadMore}>Load more</Button>
+          )}
         </>
       )}
     </>
