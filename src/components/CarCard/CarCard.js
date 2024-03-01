@@ -95,13 +95,15 @@ export const CarCard = ({ car }) => {
       </DetailsList>
 
       <Button onClick={toggleModal}>Learn more</Button>
-      <Modal
-        isOpen={isModalOpen}
-        onRequestClose={toggleModal}
-        style={customStyles}
-      >
-        <CarModal car={car} onClose={toggleModal} />
-      </Modal>
+      {isModalOpen && (
+        <Modal
+          isOpen={isModalOpen}
+          onRequestClose={toggleModal}
+          style={customStyles}
+        >
+          <CarModal car={car} onClose={toggleModal} />
+        </Modal>
+      )}
     </CardContainer>
   );
 };
