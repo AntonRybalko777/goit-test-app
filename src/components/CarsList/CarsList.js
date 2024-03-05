@@ -4,7 +4,7 @@ import { Filter } from 'components/Filter/Filter';
 import {
   selectFilteredCars,
   selectEndofList,
-  selectFilter,
+  selectFilterBrand,
 } from '../../redux/selectors';
 import { List, Button } from './CarsList.styled';
 import { useEffect, useState } from 'react';
@@ -14,9 +14,9 @@ import { useDispatch } from 'react-redux';
 export const CarsList = () => {
   const [page, setPage] = useState(1);
   const filteredCars = useSelector(selectFilteredCars);
-  const filter = useSelector(selectFilter);
+  const filter = useSelector(selectFilterBrand);
   const endOfList = useSelector(selectEndofList);
-  const dispatch = useDispatch(selectFilter);
+  const dispatch = useDispatch(selectFilterBrand);
 
   useEffect(() => {
     if (page > 1) {

@@ -58,7 +58,6 @@ export const CarCard = ({ car }) => {
       ? dispatch(removeFromFavorite(car.id))
       : dispatch(addToFavorite(car));
   };
-
   return (
     <CardContainer>
       <ImgWrapper>
