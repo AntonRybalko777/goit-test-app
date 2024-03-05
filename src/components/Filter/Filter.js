@@ -6,9 +6,8 @@ import {
   changeFilterMileageFrom,
   changeFilterMileageTo,
 } from '../../redux/filterSlice';
-import { useDispatch, useSelector } from 'react-redux';
-import { selectFilterBrand } from '../../redux/selectors';
-import { Formik, Field, Form, ErrorMessage } from 'formik';
+import { useDispatch } from 'react-redux';
+import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 
 const filterSchema = Yup.object().shape({
@@ -20,7 +19,6 @@ const filterSchema = Yup.object().shape({
 
 export const Filter = () => {
   const dispatch = useDispatch();
-  const filter = useSelector(selectFilterBrand);
 
   return (
     <Formik
